@@ -11,10 +11,18 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+
+Route::get('/', function () { // root if the user is login
+    if (Auth::guest()){
+    return view('auth.login');
+    }
+    else{
+    //return view('/');
+    Route::get('/', 'DashboardController@index');    
+    }
+
 });
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
