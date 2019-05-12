@@ -13,7 +13,7 @@
                 <ul class="navbar-nav flex-column">
                     <li class="nav-item ">
                         <a class="nav-link" href="#" aria-expanded="false" aria-controls="">
-                            <i class="fas fa-home"></i>Home
+                            <i class="fas fa-home"></i>Dashboard
                             <span class="badge badge-success">6</span>
                         </a>
                     </li>
